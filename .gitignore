@@ -1,0 +1,16 @@
+node_modules/
+
+.dist/         
+dist/
+.parcel-cache/
+
+.env
+.env.local
+.env.*.local
+
+*.map
+*.log
+
+.cache/
+.sass-cache/
+.tmp/
