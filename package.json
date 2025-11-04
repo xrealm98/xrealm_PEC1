@@ -7,7 +7,7 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build copy:redirects",
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build src/html/index.html src/html/categoria/categoria.html src/html/det/*.html",
+    "parcel:build": "parcel build src/html/index.html src/html/categoria/*.html src/html/det/*.html src/html/enlaces/*.html",
     "clean": "rimraf dist .parcel-cache",
     "copy:redirects": "cp _redirects dist/ || copy _redirects dist\\"
   },
@@ -16,9 +16,14 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
     "npm-run-all": "^4.1.5",
     "parcel": "latest",
     "rimraf": "^6.1.0",
     "sass": "^1.93.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "typed.js": "^2.1.0"
   }
 }

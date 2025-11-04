@@ -1,0 +1,87 @@
+@use "./variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  color: $color-text;
+  font-family: $font-main;
+  font-size: $font-size-base;
+  line-height: 1.5;
+}
+
+
+// Navigation Styles
+nav {
+  background-color: $bg-content;
+  padding: 0.2rem;
+  border: 2px solid gray;
+  ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    margin: 0.1rem;
+    li {
+      position: relative;
+
+      a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: red;
+          background-color: gray;
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 12px 0px;
+        a {
+          display: block;
+          color: white;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+          &:hover {
+            background-color: gray;
+            text-decoration: underline;
+          }
+        }
+      }
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+  }
+}
+
+main{
+    flex: 1;
+    padding: 1rem;
+}
+
+
+// Footer Styles
+footer {
+    background-color: $bg-content;
+    color: $color-text;
+    padding: 1rem;
+    text-align: center;
+}
