@@ -7,7 +7,7 @@
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build copy:redirects",
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build",
+    "parcel:build": "parcel build src/html/index.html src/html/categoria/categoria.html src/html/det/*.html",
     "clean": "rimraf dist .parcel-cache",
     "copy:redirects": "cp _redirects dist/ || copy _redirects dist\\"
   },
