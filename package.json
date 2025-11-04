@@ -5,10 +5,11 @@
   "browserslist": "> 0.5%, last 2 versions, not dead, not op_mini all",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean parcel:build copy:redirects",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
-    "clean": "rimraf dist .parcel-cache"
+    "clean": "rimraf dist .parcel-cache",
+    "copy:redirects": "cp _redirects dist/ || copy _redirects dist\\"
   },
   "keywords": [],
   "author": "Xavier Real <xrealm@uoc.edu>",
