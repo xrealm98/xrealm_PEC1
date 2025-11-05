@@ -2,14 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" href="../css/main.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">Categorías</a>
+            <div class="dropdown-content">
+              <a href="categoria/categoria.html">Europa</a>
+              <a href="">Categoría 2</a>
+            </div>
+          </li>
+          <li><a href="enlaces/links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <section class="inicio">
+          <h1>Bienvenido a Lugares Fantásticos</h1>
+          <p>
+            Explora los destinos más increíbles alrededor del mundo. En esta
+            página encontrarás información sobre los lugares más fascinantes de
+            nuestro planeta. Nuestro objetivo es proporcionar ideas e
+            información útil para aquellas personas que buscan aventuras
+            inolvidables.
+          </p>
+          <div class="slider-container">
+            <div class="slide fade">
+              <img
+                src="../img/landscape-inicio.jpg"
+                alt="Paisaje impresionante"
+              />
+              <div class="caption-slide">Paisaje impresionante</div>
+            </div>
+            <div class="slide fade">
+              <img src="../img/det1-thumb.jpg" alt="Pamukkale, Turquía" />
+              <div class="caption-slide">Pamukkale, Turquía</div>
+            </div>
+            <div class="slide fade">
+              <img src="../img/det2-thumb.jpg" alt="Tromsø, Noruega" />
+              <div class="caption-slide">Tromsø, Noruega</div>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+          <div class="slider-progress">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+        <section class="ultimos-detalles">
+          <h2>Últimos detalles añadidos</h2>
+          <div class="detail-card" data-aos="fade-left">
+            <img src="../img/det1-thumb.jpg" alt="Detalle 1" />
+            <div class="text-description">
+              <h3>Pamukkale, Turquía</h3>
+              <p>Pamukkale es una localidad situada en la mitad occidental de Turquía, célebre por sus aguas termales ricas en minerales que emanan de terrazas de roca travertina blanca.Linda con Hierápolis, una antigua ciudad balneario que se fundó alrededor del año 190 a. C</p>
+              <a href="det/det1.html">Leer más</a>
+            </div>
+          </div>
+          <div class="detail-card" data-aos="fade-right">
+            <img src="../img/det2-thumb.jpg" alt="Detalle 2" />
+            <div class="text-description">
+              <h3>Tromsø, Noruega</h3>
+              <p>Tromsø (trʊmsø) es una ciudad y municipio de la provincia de Troms, Noruega. Con 72 681 habitantes en 2015,[1]​ es la capital y mayor ciudad de Troms y de la región de Nord-Norge, la séptima de Noruega y la segunda de Laponia, después de Múrmansk en Rusia.</p>
+              <a href="det/det2.html">Leer más</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Página realizada por xrealm</p>
+      <p>© 2026 Lugares fantásticos. All rights reserved.</p>
+    </footer>
+    <script type="module" src="../js/app.js"></script>
   </body>
-  <ul>
-    <li><a href="/categoria">Categoría</a></li>
-    <li><a href="/det1">Detalle 1</a></li>
-    <li><a href="/det2">Detalle 2</a></li>
-  </ul>
 </html>
