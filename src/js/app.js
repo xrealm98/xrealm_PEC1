@@ -9,6 +9,7 @@ AOS.init({
 function iniSlide() {
   let slides = document.querySelectorAll(".slide");
   let dots = document.querySelectorAll(".dot");
+  if (slides.length === 0 || dots.length === 0) return;
   let slideIndex = 1;
 
   function sliderShow(nSlide) {
@@ -50,7 +51,25 @@ function iniSlide() {
 
   setInterval(() => {
     plusSlides(1);
-  }, 4000); 
+  }, 4000);
 }
 
+function scrollToTop() {
+  const btnToTop = document.getElementById("btnToTop");
+   if (!btnToTop) return;
+
+  btnToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+  window.addEventListener("scroll", () => {
+    window.scrollY > 100
+      ? (btnToTop.style.display = "block")
+      : (btnToTop.style.display = "none");
+  });
+}
+
+scrollToTop();
 iniSlide();
