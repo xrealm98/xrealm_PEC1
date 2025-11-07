@@ -8,14 +8,13 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav aria-label="Navegación principal">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)">Categorías</a>
+            <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Categorías</a>
             <div class="dropdown-content">
               <a href="../categoria/categoria.html">Europa</a>
-              <a href="">Categoría 2</a>
             </div>
           </li>
           <li><a href="../enlaces/links.html">Enlaces</a></li>
@@ -29,7 +28,7 @@
         <img
           class="det-main-img"
           src="../../img/det1-thumb.jpg"
-          alt="Pamukkale, Turquía"
+          alt="Paisaje de Pamukkale con terrazas blancas y aguas termales"
         />
 
         <h2>Qué es Pamukkale</h2>
@@ -81,7 +80,7 @@
            <img
             class="article-img"
             src="../../img/det/piscinas-travertino-pamukkale.png"
-            alt="Terrazas de travertino en Pamukkale"
+            alt="Vista de las terrazas de travertino en Pamukkale"
           />
           <figcaption>Terrazas de travertino en Pamukkale</figcaption>
         </figure>
@@ -100,7 +99,7 @@
           <img
             class="article-img"
             src="../../img/det/piscina-cleopatra.jpg"
-            alt="Piscina de Cleopatra en Pamukkale"
+            alt="Vista de la piscina de Cleopatra en Pamukkale"
           />
           <figcaption>Piscina de Cleopatra en Pamukkale</figcaption>
         </figure>
@@ -118,7 +117,7 @@
           <img
             class="article-img"
             src="../../img/det/Hierapolis-Pamukkale.jpg"
-            alt="Ruinas de Hierápolis en Pamukkale"
+            alt="Vista de las ruinas de Hierápolis en Pamukkale"
           />
           <figcaption>Ruinas de Hierápolis en Pamukkale</figcaption>
         </figure>
@@ -131,7 +130,7 @@
           allowfullscreen
         ></iframe>
       </article>
-      <button id="btnToTop">↑ Volver arriba ↑</button>
+      <button id="btnToTop" aria-label="Volver al inicio de la página">↑ Volver arriba ↑</button>
     </main>
     <footer>
       <p>Página realizada por xrealm</p>
