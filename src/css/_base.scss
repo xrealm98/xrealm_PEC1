@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -20,11 +21,13 @@ body {
   line-height: 1.5;
 }
 
-
 nav {
   background-color: $bg-content;
   padding: 0.2rem;
-  border: 2px solid gray;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 1.2rem;
+ 
   ul {
     list-style: none;
     display: flex;
@@ -36,7 +39,7 @@ nav {
       a {
         display: block;
         padding: 0.5rem 1rem;
-        color: white;
+        color: $color-text;
         text-decoration: none;
         &:hover {
           text-decoration: underline;
@@ -64,23 +67,24 @@ nav {
           }
         }
       }
-      &:hover .dropdown-content {
+      &:hover .dropdown-content,
+      &:focus-within .dropdown-content {
         display: block;
       }
     }
   }
 }
 
-main{
-    flex: 1;
-    padding: 1rem;
+main {
+  flex: 1;
+  padding: 1rem;
 }
-
 
 // Footer Styles
 footer {
-    background-color: $bg-content;
-    color: $color-text;
-    padding: 1rem;
-    text-align: center;
+  background-color: $bg-content;
+  color: $color-text;
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid black;
 }

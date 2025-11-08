@@ -1,4 +1,5 @@
 import AOS from "aos";
+import Typed from "typed.js";
 import "aos/dist/aos.css";
 
 AOS.init({
@@ -6,11 +7,25 @@ AOS.init({
   once: true,
 });
 
+const typed = document.querySelector("#typed-text");
+if (typed) {
+  new Typed(typed, {
+    strings: [
+      "Explora destinos increíbles",
+      "Descubre lugares únicos",
+      "Vive aventuras inolvidables",
+    ],
+    typeSpeed: 50,
+    loop: true,
+  });
+}
+
 function iniSlide() {
   let slides = document.querySelectorAll(".slide");
   let dots = document.querySelectorAll(".dot");
   if (slides.length === 0 || dots.length === 0) return;
   let slideIndex = 1;
+
 
   function sliderShow(nSlide) {
     if (nSlide > slides.length) {
@@ -51,12 +66,35 @@ function iniSlide() {
 
   setInterval(() => {
     plusSlides(1);
-  }, 4000);
+  }, 5000);
+
+const slider = document.querySelector(".slider-container");
+  if (!slider) return;
+  let startX = 0;
+  let endX = 0;
+
+  slider.addEventListener("touchstart", function (e) {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchmove", function (e) {
+    endX = e.touches[0].clientX;
+  });
+  slider.addEventListener('touchend', function() {
+  if (startX - endX > 50) {
+     plusSlides(1);
+  } else if (endX - startX > 50) {
+    plusSlides(-1);
+  }
+ 
+  startX = 0;
+  endX = 0;
+});
 }
 
 function scrollToTop() {
   const btnToTop = document.getElementById("btnToTop");
-   if (!btnToTop) return;
+  if (!btnToTop) return;
 
   btnToTop.addEventListener("click", () => {
     window.scrollTo({

@@ -3,19 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../css/main.scss" />
+    <meta name="keywords" content="viajes, turismo, lugares, destinos, Tromsø" />
+    <meta name="author" content="Xavier Real Montadas" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../img/Lugares_Fantásticos-icon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tromsø, Noruega</title>
+    <title>Lugares Fantásticos | Tromsø, Noruega</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav aria-label="Navegación principal">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)">Categorías</a>
+            <a
+              href="javascript:void(0)"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Categorías</a
+            >
             <div class="dropdown-content">
               <a href="../categoria/categoria.html">Europa</a>
-              <a href="">Categoría 2</a>
             </div>
           </li>
           <li><a href="../enlaces/links.html">Enlaces</a></li>
@@ -28,7 +39,7 @@
         <img
           class="det-main-img"
           src="../../img/det2-thumb.jpg"
-          alt="Tromsø, Noruega"
+          alt="Paisaje de Tromsø, Noruega"
         />
 
         <h2>¿Qué es Tromsø?</h2>
@@ -77,7 +88,7 @@
           <img
             class="article-img"
             src="../../img/det/tel-fjellheisen.jpg"
-            alt="Teleférico Fjellheisen en Tromsø"
+            alt="Vista desde el teleférico Fjellheisen donde se ve Tromsø"
           />
           <figcaption>Teleférico Fjellheisen en Tromsø</figcaption>
         </figure>
@@ -93,7 +104,7 @@
           <img
             class="article-img"
             src="../../img/det/cat-tromso.jpg"
-            alt="Catedral de Tromsø"
+            alt="Vista desde fuera de la catedral de Tromsø"
           />
           <figcaption>Catedral de Tromsø</figcaption>
         </figure>
@@ -109,7 +120,7 @@
           <img
             class="article-img"
             src="../../img/det/crucero-tromso.jpg"
-            alt="Crucero por los fiordos en Tromsø"
+            alt="Imagen de un crucero surcando los fiordos cerca de Tromsø"
           />
           <figcaption>Crucero por los fiordos en Tromsø</figcaption>
         </figure>
@@ -123,7 +134,9 @@
           allowfullscreen
         ></iframe>
       </article>
-      <button id="btnToTop">↑ Volver arriba ↑</button>
+      <button id="btnToTop" aria-label="Volver al inicio de la página">
+        ↑ Volver arriba ↑
+      </button>
     </main>
     <footer>
       <p>Página realizada por xrealm</p>
