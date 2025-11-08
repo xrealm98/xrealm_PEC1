@@ -1,0 +1,92 @@
+@use "variables" as *;
+
+.content-article {
+  width: auto;
+  max-width: 900px;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: justify;
+  .det-main-img {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 500px;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+  .article-img {
+    width: 70vw;
+    max-width: 80%;
+    height: auto;
+    max-height: none;
+    display: block;
+    max-height: 400px;
+    margin: 1rem auto;
+    border-radius: 5px;
+  }
+  p {
+    margin: 0.75rem 0;
+  }
+  iframe {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    height: 400px;
+    border-radius: 5px;
+  }
+  h2 {
+    margin: 1rem 0;
+    border-bottom: 2px solid black;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+}
+
+#btnToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  background-color: green;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  &:hover {
+    background-color: darkgreen;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-article .det-main-img,
+  .content-article .article-img
+   {
+    width: 95vw;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-height: none;
+  }
+  .content-article iframe{
+    width: 95vw;
+    max-width: 100%;  
+    max-height:  350px;
+  }
+  #btnToTop {
+    bottom: 5px;
+    right: 5px;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+  }
+}

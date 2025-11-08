@@ -7,15 +7,18 @@ AOS.init({
   once: true,
 });
 
-const typed = new Typed("#typed-text", {
-  strings: [
-    "Explora destinos increíbles",
-    "Descubre lugares únicos",
-    "Vive aventuras inolvidables",
-  ],
-  typeSpeed: 50,
-  loop: true,
-});
+const typed = document.querySelector("#typed-text");
+if (typed) {
+  new Typed(typed, {
+    strings: [
+      "Explora destinos increíbles",
+      "Descubre lugares únicos",
+      "Vive aventuras inolvidables",
+    ],
+    typeSpeed: 50,
+    loop: true,
+  });
+}
 
 function iniSlide() {
   let slides = document.querySelectorAll(".slide");
