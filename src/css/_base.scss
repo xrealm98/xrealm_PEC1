@@ -1,5 +1,7 @@
 @use "./variables" as *;
 
+
+// ------- Reset and base style -------
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ body {
   line-height: 1.5;
 }
 
+// ------- Nav style -------
 nav {
   background-color: $bg-content;
   padding: 0.2rem;
@@ -80,7 +83,7 @@ main {
   padding: 1rem;
 }
 
-// Footer Styles
+// Footer Style
 footer {
   background-color: $bg-content;
   color: $color-text;
