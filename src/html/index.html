@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="viajes, turismo, lugares, destinos" />
     <meta name="author" content="Xavier Real Montadas" />
-    <link rel="icon" type="image/png" href="../img/Lugares_Fantásticos-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../img/Lugares_Fantásticos-icon.png"
+    />
 
     <title>Lugares Fantásticos | Inicio</title>
   </head>
@@ -16,7 +20,12 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Categorías</a>
+            <a
+              href="javascript:void(0)"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Categorías</a
+            >
             <div class="dropdown-content">
               <a href="/categoria">Europa</a>
             </div>
@@ -28,8 +37,34 @@
     <main>
       <div class="content-inicio">
         <section class="inicio">
-          <h1>Bienvenido a Lugares Fantásticos</h1>
+          <div class="title-section" aria-hidden="true">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="100%" height="100%" class="logo-rect" />
+              <circle cx="50" cy="50" r="40" class="logo-circle" />
+              <text x="50%" y="55%" text-anchor="middle" class="logo-text">
+                LF
+              </text>
+            </svg>
+            <h1>Bienvenido a Lugares Fantásticos</h1>
+          </div>
           <span id="typed-text"></span>
+          <figure class="img-index">
+             <img
+            srcset="
+              ../img/index-photo.jpeg?as=webp&width=350 1x,
+              ../img/index-photo.jpeg?as=webp&width=700 2x,
+              ../img/index-photo.jpeg?as=webp&width=1400 3x
+            "
+            class="article-img"
+            src="../img/index-photo.jpeg"
+            alt="Vista de las terrazas de travertino en Pamukkale"
+          />
+          </figure>
           <span id="separator"></span>
           <p>
             Explora los destinos más increíbles alrededor del mundo. En esta
@@ -40,18 +75,86 @@
           </p>
           <div class="slider-container">
             <div class="slide fade">
-              <img
-                src="../img/det/cat-tromso.jpg"
-                alt="Tromsø, Noruega"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ../img/det/cat-tromso.jpg?as=webp&width=361  1x,
+                    ../img/det/cat-tromso.jpg?as=webp&width=722  2x,
+                    ../img/det/cat-tromso.jpg?as=webp&width=1083 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ../img/det/cat-tromso.jpg?as=webp&width=1468 1x,
+                    ../img/det/cat-tromso.jpg?as=webp&width=2936 2x,
+                    ../img/det/cat-tromso.jpg?as=webp&width=4404 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="../img/det/cat-tromso.jpg?as=webp&width=1468"
+                  alt="Catedral de Tromsø, Noruega"
+                />
+              </picture>
               <div class="caption-slide">Catedral de Tromsø, Noruega</div>
             </div>
             <div class="slide fade">
-              <img src="../img/slider/piscina-travertino-slider.jpg" alt="Pamukkale, Turquía" />
-              <div class="caption-slide">Piscina de travertino en Pamukkale</div>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=361  1x,
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=722  2x,
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=1083 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=1468 1x,
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=2936 2x,
+                    ../img/slider/piscina-travertino-slider.jpg?as=webp&width=4404 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="../img/slider/piscina-travertino-slider.jpg?as=webp&width=1468"
+                  alt="Piscina de travertino en Pamukkale"
+                />
+              </picture>
+              <div class="caption-slide">
+                Piscina de travertino en Pamukkale
+              </div>
             </div>
             <div class="slide fade">
-              <img src="../img/slider/tromso-noruega.jpg" alt="Tromsø, Noruega" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=361  1x,
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=722  2x,
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=1083 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=1468 1x,
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=2936 2x,
+                    ../img/slider/tromso-noruega.jpg?as=webp&width=4404 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="../img/slider/tromso-noruega.jpg?as=webp&width=1468"
+                  alt="Tromsø, Noruega"
+                />
+              </picture>
               <div class="caption-slide">Tromsø, Noruega</div>
             </div>
             <a class="prev" aria-label="Imagen anterior">&#10094;</a>
@@ -66,18 +169,46 @@
         <section class="ultimos-articulos">
           <h2>Últimos artículos añadidos</h2>
           <div class="detail-card" data-aos="fade-left">
-            <img src="../img/det1-thumb.jpg" alt="Detalle 1" />
+            <img
+              srcset="
+                ../img/det1-thumb.jpg?as=webp&width=350  1x,
+                ../img/det1-thumb.jpg?as=webp&width=750  2x,
+                ../img/det1-thumb.jpg?as=webp&width=1050 3x
+              "
+              src="../img/det1-thumb.jpg"
+              alt="Detalle 1"
+            />
             <div class="text-description">
               <h3>Pamukkale, Turquía</h3>
-              <p>Pamukkale es una localidad situada en la mitad occidental de Turquía, célebre por sus aguas termales ricas en minerales que emanan de terrazas de roca travertina blanca. Linda con Hierápolis, una antigua ciudad balneario que se fundó alrededor del año 190 a. C</p>
+              <p>
+                Pamukkale es una localidad situada en la mitad occidental de
+                Turquía, célebre por sus aguas termales ricas en minerales que
+                emanan de terrazas de roca travertina blanca. Linda con
+                Hierápolis, una antigua ciudad balneario que se fundó alrededor
+                del año 190 a. C
+              </p>
               <a href="/det1">Leer más</a>
             </div>
           </div>
           <div class="detail-card" data-aos="fade-right">
-            <img src="../img/det2-thumb.jpg" alt="Detalle 2" />
+            <img
+              srcset="
+                ../img/det2-thumb.jpg?as=webp&width=350  1x,
+                ../img/det2-thumb.jpg?as=webp&width=750  2x,
+                ../img/det2-thumb.jpg?as=webp&width=1050 3x
+              "
+              src="../img/det2-thumb.jpg"
+              alt="Detalle 2"
+            />
             <div class="text-description">
               <h3>Tromsø, Noruega</h3>
-              <p>Tromsø (trʊmsø) es una ciudad y municipio de la provincia de Troms, Noruega. Con 72 681 habitantes en 2015, es la capital y mayor ciudad de Troms y de la región de Nord-Norge, la séptima de Noruega y la segunda de Laponia, después de Múrmansk en Rusia.</p>
+              <p>
+                Tromsø (trʊmsø) es una ciudad y municipio de la provincia de
+                Troms, Noruega. Con 72 681 habitantes en 2015, es la capital y
+                mayor ciudad de Troms y de la región de Nord-Norge, la séptima
+                de Noruega y la segunda de Laponia, después de Múrmansk en
+                Rusia.
+              </p>
               <a href="/det2">Leer más</a>
             </div>
           </div>

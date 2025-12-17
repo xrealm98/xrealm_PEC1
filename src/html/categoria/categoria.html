@@ -4,9 +4,16 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../css/main.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="viajes, turismo, lugares, destinos, Europa" />
+    <meta
+      name="keywords"
+      content="viajes, turismo, lugares, destinos, Europa"
+    />
     <meta name="author" content="Xavier Real Montadas" />
-    <link rel="icon" type="image/png" href="../../img/Lugares_Fantásticos-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../img/Lugares_Fantásticos-icon.png"
+    />
     <title>Lugares Fantásticos | Categoría: Europa</title>
   </head>
   <body>
@@ -15,7 +22,12 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)" aria-haspopup="true" aria-expanded="false">Categorías</a>
+            <a
+              href="javascript:void(0)"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Categorías</a
+            >
             <div class="dropdown-content">
               <a href="/categoria">Europa</a>
             </div>
@@ -28,11 +40,35 @@
       <div class="content-category">
         <h1>Europa</h1>
         <p>
-          Descubre algunos de los lugares más impresionantes del continente europeo
+          Descubre algunos de los lugares más impresionantes del continente
+          europeo
         </p>
         <div class="category-grid">
           <a href="/det1" class="grid-card" data-aos="fade-up">
-            <img src="../../img/det1-thumb.jpg" alt="Piscinas de travertino de Pamukkale" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ../../img/det1-thumb-mobile.jpg?as=webp&width=400 400w,
+                  ../../img/det1-thumb-mobile.jpg?as=webp&width=600 600w,
+                  ../../img/det1-thumb-mobile.jpg?as=webp&width=800 800w
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../../img/det1-thumb.jpg?as=webp&width=800   800w,
+                  ../../img/det1-thumb.jpg?as=webp&width=1000 1000w
+                "
+                type="image/webp"
+              />
+              <img
+                class="det-main-img"
+                src="../../img/det1-thumb.jpg"
+                alt="Paisaje de Pamukkale con terrazas blancas y aguas termales"
+              />
+            </picture>
             <h2>Pamukkale, Turquía</h2>
             <p>
               Pamukkale es una localidad situada en la mitad occidental de
@@ -43,13 +79,36 @@
             </p>
           </a>
           <a href="/det2" class="grid-card" data-aos="fade-up">
-            <img src="../../img/det2-thumb.jpg" alt="Paisaje de Tromsø" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ../../img/det2-thumb-mobile.jpg?as=webp&width=400 400w,
+                  ../../img/det2-thumb-mobile.jpg?as=webp&width=600 600w,
+                  ../../img/det2-thumb-mobile.jpg?as=webp&width=800 800w
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ../../img/det2-thumb.jpg?as=webp&width=800   800w,
+                  ../../img/det2-thumb.jpg?as=webp&width=1000 1000w
+                "
+                type="image/webp"
+              />
+              <img
+                class="det-main-img"
+                src="../../img/det2-thumb.jpg"
+                alt="Paisaje de Tromsø, Noruega"
+              />
+            </picture>
             <h2>Tromsø, Noruega</h2>
             <p>
-              Tromsø es una ciudad y municipio de la provincia de Troms, Noruega.
-              Con 72 681 habitantes en 2015, es la capital y mayor ciudad de
-              Troms y de la región de Nord-Norge, la séptima de Noruega y la
-              segunda de Laponia, después de Múrmansk en Rusia.
+              Tromsø es una ciudad y municipio de la provincia de Troms,
+              Noruega. Con 72 681 habitantes en 2015, es la capital y mayor
+              ciudad de Troms y de la región de Nord-Norge, la séptima de
+              Noruega y la segunda de Laponia, después de Múrmansk en Rusia.
             </p>
           </a>
         </div>
