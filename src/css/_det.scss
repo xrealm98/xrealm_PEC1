@@ -17,12 +17,10 @@
     border-radius: 10px;
   }
   .article-img {
-    width: 70vw;
-    max-width: 80%;
-    height: auto;
-    max-height: none;
+    width: 100%;
+    max-width: 700px;
     display: block;
-    max-height: 400px;
+    height: auto;
     margin: 1rem auto;
     border-radius: 5px;
   }
@@ -69,21 +67,19 @@
 // ------- Responsive style -------
 @media (max-width: 600px) {
   .content-article .det-main-img,
-  .content-article .article-img
-   {
-    width: 95vw;
-    max-width: 100%;
-    min-width: 0;
+  .content-article .article-img {
     height: auto;
     display: block;
     margin: 1rem auto;
     border-radius: 10px;
-    max-height: none;
   }
-  .content-article iframe{
+  .content-article .det-main-img{
+    height: 250px;
+  }
+  .content-article iframe {
     width: 95vw;
-    max-width: 100%;  
-    max-height:  350px;
+    max-width: 100%;
+    max-height: 350px;
   }
   #btnToTop {
     bottom: 5px;

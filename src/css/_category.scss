@@ -24,14 +24,26 @@
 
     img {
       width: 100%;
+      min-height: 250px;
       max-height: 300px;
       border-radius: 10px;
       aspect-ratio: 16/6;
     }
-    &:hover, &:focus {
-      transform: scale(1.02);
+    &:hover,
+    &:focus {
+      transform: scale(1.03) translateY(-4px) !important;
+      box-shadow: 15px 30px 80px rgba(0, 0, 0, 0.25);
+      background-color: rgb(71, 66, 66);
+      img {
+        transform: scale(1.02);
+        filter: brightness(1.05);
+      }
+      h2 {
+        transform: scale(1.03);
+        color: rgb(0, 153, 255);
+      }
     }
-    h2{
+    h2 {
       margin: 1rem 0;
       color: black;
       border-bottom: 2px solid black;

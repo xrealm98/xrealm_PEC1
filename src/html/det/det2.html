@@ -3,12 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../css/main.scss" />
-    <meta name="keywords" content="viajes, turismo, lugares, destinos, Tromsø" />
+    <meta
+      name="keywords"
+      content="viajes, turismo, lugares, destinos, Tromsø"
+    />
     <meta name="author" content="Xavier Real Montadas" />
+     <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="icon" href="../../img/favicon/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
-      href="../../img/Lugares_Fantásticos-icon.png"
+      sizes="16x16"
+      href="../../img/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../../img/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="180x180"
+      href="../../img/favicon/apple-touch-icon.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lugares Fantásticos | Tromsø, Noruega</title>
@@ -36,11 +66,30 @@
     <main>
       <article class="content-article">
         <h1>Tromsø, Noruega</h1>
-        <img
-          class="det-main-img"
-          src="../../img/det2-thumb.jpg"
-          alt="Paisaje de Tromsø, Noruega"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ../../img/det2-thumb-mobile.jpg?as=webp&width=400 400w,
+              ../../img/det2-thumb-mobile.jpg?as=webp&width=600 600w,
+              ../../img/det2-thumb-mobile.jpg?as=webp&width=800 800w
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="
+              ../../img/det2-thumb.jpg?as=webp&width=800   800w,
+              ../../img/det2-thumb.jpg?as=webp&width=1000 1000w
+            "
+            type="image/webp"
+          />
+          <img
+            class="det-main-img"
+            src="../../img/det2-thumb.jpg"
+            alt="Paisaje de Tromsø, Noruega"
+          />
+        </picture>
 
         <h2>¿Qué es Tromsø?</h2>
         <p>
@@ -86,6 +135,16 @@
         </p>
         <figure>
           <img
+             srcset="
+              ../../img/det/tel-fjellheisen.jpg?as=webp&width=350 350w,
+              ../../img/det/tel-fjellheisen.jpg?as=webp&width=700 700w,
+              ../../img/det/tel-fjellheisen.jpg?as=webp&width=1400 1400w
+            "
+            sizes="
+            (max-width: 600px) 350px,
+            (max-width: 700px) 450px,
+            700px
+            "
             class="article-img"
             src="../../img/det/tel-fjellheisen.jpg"
             alt="Vista desde el teleférico Fjellheisen donde se ve Tromsø"
@@ -102,6 +161,16 @@
         </p>
         <figure>
           <img
+            srcset="
+              ../../img/det/cat-tromso.jpg?as=webp&width=350 350w,
+              ../../img/det/cat-tromso.jpg?as=webp&width=700 700w,
+              ../../img/det/cat-tromso.jpg?as=webp&width=1400 1400w,
+            "
+            sizes="
+            (max-width: 600px) 350px,
+            (max-width: 700px) 450px,
+            700px
+            "
             class="article-img"
             src="../../img/det/cat-tromso.jpg"
             alt="Vista desde fuera de la catedral de Tromsø"
@@ -118,6 +187,16 @@
         </p>
         <figure>
           <img
+             srcset="
+              ../../img/det/crucero-tromso.jpg?as=webp&width=350 350w,
+              ../../img/det/crucero-tromso.jpg?as=webp&width=700 700w,
+              ../../img/det/crucero-tromso.jpg?as=webp&width=1400 1400w,
+            "
+            sizes="
+            (max-width: 600px) 350px,
+            (max-width: 700px) 450px,
+            700px
+            "
             class="article-img"
             src="../../img/det/crucero-tromso.jpg"
             alt="Imagen de un crucero surcando los fiordos cerca de Tromsø"
@@ -140,7 +219,7 @@
     </main>
     <footer>
       <p>Página realizada por xrealm</p>
-      <p>© 2026 Lugares fantásticos. All rights reserved.</p>
+      <p>© 2026 Lugares fantásticos. <span lang="en">All rights reserved.</span></p>
     </footer>
     <script type="module" src="../../js/app.js"></script>
   </body>
