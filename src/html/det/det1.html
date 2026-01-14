@@ -10,7 +10,7 @@
       content="viajes, turismo, lugares, destinos, Pamukkale"
     />
     <meta name="author" content="Xavier Real Montadas" />
-    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest" />
     <link rel="icon" href="../../img/favicon/favicon.ico" />
     <link
       rel="icon"
@@ -42,6 +42,7 @@
       sizes="180x180"
       href="../../img/favicon/apple-touch-icon.png"
     />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
     <title>Lugares Fantásticos | Pamukkale, Turquía</title>
   </head>
   <body>
@@ -73,8 +74,7 @@
             sizes="100vw"
             srcset="
               ../../img/det1-thumb-mobile.jpg?as=webp&width=400 400w,
-              ../../img/det1-thumb-mobile.jpg?as=webp&width=600 600w,
-              ../../img/det1-thumb-mobile.jpg?as=webp&width=800 800w
+              ../../img/det1-thumb-mobile.jpg?as=webp&width=610 610w
             "
             type="image/webp"
           />
@@ -82,8 +82,8 @@
             media="(min-width: 769px)"
             sizes="100vw"
             srcset="
-              ../../img/det1-thumb.jpg?as=webp&width=800   800w,
-              ../../img/det1-thumb.jpg?as=webp&width=1000 1000w
+              ../../img/det1-thumb.jpg?as=webp&width=800 800w,
+              ../../img/det1-thumb.jpg?as=webp&width=875 875w
             "
             type="image/webp"
           />
@@ -91,6 +91,8 @@
             class="det-main-img"
             src="../../img/det1-thumb.jpg"
             alt="Paisaje de Pamukkale con terrazas blancas y aguas termales"
+            width="875"
+            height="500"
           />
         </picture>
 
@@ -142,8 +144,8 @@
         <figure>
           <img
             srcset="
-              ../../img/det/piscinas-travertino-pamukkale.jpg?as=webp&width=350 350w,
-              ../../img/det/piscinas-travertino-pamukkale.jpg?as=webp&width=700 700w,
+              ../../img/det/piscinas-travertino-pamukkale.jpg?as=webp&width=350   350w,
+              ../../img/det/piscinas-travertino-pamukkale.jpg?as=webp&width=610   610w,
               ../../img/det/piscinas-travertino-pamukkale.jpg?as=webp&width=1400 1400w
             "
             sizes="
@@ -155,6 +157,8 @@
             src="../../img/det/piscinas-travertino-pamukkale.jpg"
             alt="Vista de las terrazas de travertino en Pamukkale"
             loading="lazy"
+            width="700"
+            height="465"
           />
           <figcaption>Terrazas de travertino en Pamukkale</figcaption>
         </figure>
@@ -172,8 +176,8 @@
         <figure>
           <img
             srcset="
-              ../../img/det/piscina-cleopatra.jpg?as=webp&width=350 350w,
-              ../../img/det/piscina-cleopatra.jpg?as=webp&width=700 700w,
+              ../../img/det/piscina-cleopatra.jpg?as=webp&width=350   350w,
+              ../../img/det/piscina-cleopatra.jpg?as=webp&width=610   610w,
               ../../img/det/piscina-cleopatra.jpg?as=webp&width=1400 1400w
             "
             sizes="
@@ -185,6 +189,8 @@
             class="article-img"
             alt="Vista de la piscina de Cleopatra en Pamukkale"
             loading="lazy"
+            width="700"
+            height="465"
           />
           <figcaption>Piscina de Cleopatra en Pamukkale</figcaption>
         </figure>
@@ -201,8 +207,8 @@
         <figure>
           <img
             srcset="
-              ../../img/det/Hierapolis-Pamukkale.jpg?as=webp&width=350 350w,
-              ../../img/det/Hierapolis-Pamukkale.jpg?as=webp&width=700 700w,
+              ../../img/det/Hierapolis-Pamukkale.jpg?as=webp&width=350   350w,
+              ../../img/det/Hierapolis-Pamukkale.jpg?as=webp&width=610   610w,
               ../../img/det/Hierapolis-Pamukkale.jpg?as=webp&width=1400 1400w
             "
             sizes="
@@ -214,18 +220,13 @@
             class="article-img"
             alt="Vista de las ruinas de Hierápolis en Pamukkale"
             loading="lazy"
+            width="700"
+            height="465"
           />
           <figcaption>Ruinas de Hierápolis en Pamukkale</figcaption>
         </figure>
         <h2>Video sobre Pamukkale</h2>
-        <iframe
-          src="https://www.youtube.com/embed/ZgsFjM2Lrnc?si=53eks1RnFd6bZjKn"
-          title="Video informativo sobre Pamukkale, Turquía"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          loading="lazy"
-          allowfullscreen
-        ></iframe>
+        <lite-youtube videoid="ZgsFjM2Lrnc"></lite-youtube>
       </article>
       <button id="btnToTop" aria-label="Volver al inicio de la página">
         ↑ Volver arriba ↑
@@ -233,7 +234,9 @@
     </main>
     <footer>
       <p>Página realizada por xrealm</p>
-      <p>© 2026 Lugares fantásticos. <span lang="en">All rights reserved.</span></p>
+      <p>
+        © 2026 Lugares fantásticos. <span lang="en">All rights reserved.</span>
+      </p>
     </footer>
     <script type="module" src="../../js/det.js" defer></script>
   </body>
