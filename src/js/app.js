@@ -3,14 +3,18 @@ import Typed from "typed.js";
 
 
 window.addEventListener('load', () => {
-    import('aos').then((AOS) => {
-        import('aos/dist/aos.css'); 
-        AOS.init({
-            duration: 800,
-            once: true,
+    if (document.querySelector('[data-aos]')) {
+        import('aos').then((module) => {
+            const AOS = module.default;
+            AOS.init({
+                duration: 800,
+                once: true,
+                disable: "mobile"
+            });
         });
-    });
+    }
 });
+
 const typed = document.querySelector("#typed-text");
 if (typed) {
   new Typed(typed, {
