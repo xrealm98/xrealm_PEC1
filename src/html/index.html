@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/main.scss" />
+    <link rel="stylesheet" href="../css/_index.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="viajes, turismo, lugares, destinos" />
     <meta name="author" content="Xavier Real Montadas" />
@@ -131,6 +132,7 @@
                 <img
                   src="../img/det/cat-tromso.jpg?as=webp&width=360"
                   alt="Catedral de Tromsø, Noruega"
+                  fetchpriority="high"
                 />
               </picture>
               <div class="caption-slide">Catedral de Tromsø, Noruega</div>
@@ -210,10 +212,11 @@
           <div class="detail-card" data-aos="fade-left">
             <img
               srcset="
-                ../img/det1-thumb.jpg?as=webp&width=350  1x,
-                ../img/det1-thumb.jpg?as=webp&width=750  2x,
-                ../img/det1-thumb.jpg?as=webp&width=1050 3x
+                ../img/det1-thumb.jpg?as=webp&width=350 350w,
+                ../img/det1-thumb.jpg?as=webp&width=575 575w,
+                ../img/det1-thumb.jpg?as=webp&width=750 750w
               "
+              sizes="(max-width: 600px) 90vw, 350px"
               src="../img/det1-thumb.jpg"
               alt="Terrazas de travertino blancas en Pamukkale"
               loading="lazy"
@@ -235,10 +238,11 @@
           <div class="detail-card" data-aos="fade-right">
             <img
               srcset="
-                ../img/det2-thumb.jpg?as=webp&width=350  1x,
-                ../img/det2-thumb.jpg?as=webp&width=750  2x,
-                ../img/det2-thumb.jpg?as=webp&width=1050 3x
+                ../img/det2-thumb.jpg?as=webp&width=350 350w,
+                ../img/det2-thumb.jpg?as=webp&width=575 575w,
+                ../img/det2-thumb.jpg?as=webp&width=750 750w
               "
+              sizes="(max-width: 600px) 90vw, 350px"
               src="../img/det2-thumb.jpg"
               alt="Vista de una noche en Tromsø"
               loading="lazy"

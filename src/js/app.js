@@ -2,11 +2,15 @@ import AOS from "aos";
 import Typed from "typed.js";
 import "aos/dist/aos.css";
 
-AOS.init({
-  duration: 800,
-  once: true,
+window.addEventListener('load', () => {
+    import('aos').then((AOS) => {
+        import('aos/dist/aos.css'); 
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    });
 });
-
 const typed = document.querySelector("#typed-text");
 if (typed) {
   new Typed(typed, {
