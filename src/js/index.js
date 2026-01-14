@@ -1,19 +1,4 @@
-import AOS from "aos";
 import Typed from "typed.js";
-
-
-window.addEventListener('load', () => {
-    if (document.querySelector('[data-aos]')) {
-        import('aos').then((module) => {
-            const AOS = module.default;
-            AOS.init({
-                duration: 800,
-                once: true,
-                disable: "mobile"
-            });
-        });
-    }
-});
 
 const typed = document.querySelector("#typed-text");
 if (typed) {
@@ -100,22 +85,5 @@ const slider = document.querySelector(".slider-container");
 });
 }
 
-function scrollToTop() {
-  const btnToTop = document.getElementById("btnToTop");
-  if (!btnToTop) return;
 
-  btnToTop.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-  window.addEventListener("scroll", () => {
-    window.scrollY > 100
-      ? (btnToTop.style.display = "block")
-      : (btnToTop.style.display = "none");
-  });
-}
-
-scrollToTop();
 iniSlide();
