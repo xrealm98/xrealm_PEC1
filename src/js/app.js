@@ -1,6 +1,6 @@
 import AOS from "aos";
 import Typed from "typed.js";
-import "aos/dist/aos.css";
+
 
 window.addEventListener('load', () => {
     import('aos').then((AOS) => {
